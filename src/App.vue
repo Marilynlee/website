@@ -3,7 +3,7 @@
     <b-alert show dismissible variant="dark">
       Dismissible Alert! Click the close button over there <b>&rArr;</b>
     </b-alert>
-    <div id="app" class="container">
+    <div id="app">
       <navbar></navbar>
       <carousel></carousel>
       <tabs></tabs>
