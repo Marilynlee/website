@@ -57,7 +57,7 @@
     },
     methods: {
       onSlideStart(slide) {
-        console.log(this);
+//        console.log(this);
         this.sliding = true
       },
       onSlideEnd(slide) {
