@@ -7,6 +7,7 @@
       <navbar></navbar>
       <carousel></carousel>
       <tabs></tabs>
+      <cards></cards>
     </div>
   </div>
 </template>
@@ -15,11 +16,12 @@
 import navbar from "./components/index/navbar";
 import carousel from "./components/index/carousel";
 import tabs from "./components/index/tabs";
+import cards from "./components/index/cards";
 
 
 export default {
   name: 'app',
-  components:{navbar,carousel,tabs}
+  components:{navbar,carousel,tabs,cards}
 }
 </script>
 

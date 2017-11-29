@@ -7,6 +7,8 @@
           <!-- 这部分放你要渲染的那些内容 -->
           <swiper-slide v-for="item in discountItems" :key="item.id">
             <img class="swiper-image" :src="item.src" alt="swiper-image"/>
+            <h4 >discountItems name</h4>
+            <p >59% Cotton Lorem Ipsum Dolor Sit Amet esed ultrices sapien nunc nam frignila</p>
           </swiper-slide>
           <div class="swiper-button-prev" slot="button-prev"></div>
           <div class="swiper-button-next" slot="button-next"></div>
@@ -17,6 +19,8 @@
           <!-- 这部分放你要渲染的那些内容 -->
           <swiper-slide v-for="item in newItems" :key="item.id">
             <img class="swiper-image" :src="item.src" alt="swiper-image">
+            <h4 >newItems name</h4>
+            <p >59% Cotton Lorem Ipsum Dolor Sit Amet esed ultrices sapien nunc nam frignila</p>
           </swiper-slide>
           <div class="swiper-button-prev" slot="button-prev"></div>
           <div class="swiper-button-next" slot="button-next"></div>
@@ -27,6 +31,8 @@
           <!-- 这部分放你要渲染的那些内容 -->
           <swiper-slide v-for="item in fetureItems" :key="item.id">
             <img class="swiper-image" :src="item.src" alt="swiper-image">
+            <h4 >fetureItems name</h4>
+            <p >59% Cotton Lorem Ipsum Dolor Sit Amet esed ultrices sapien nunc nam frignila</p>
           </swiper-slide>
           <div class="swiper-button-prev" slot="button-prev"></div>
           <div class="swiper-button-next" slot="button-next"></div>
@@ -55,10 +61,15 @@
           setWrapperSize: true,
           autoHeight: false,
           observeParents: true,
+          loop:true,
           cssWidthAndHeight : {width:"100%",height:'300px'},
           updateOnImagesReady : true,
           slidesPerView: 3,
+          slidesPerGroup:3,
           spaceBetween: 30,
+          prevButton:'.swiper-button-prev',//上一张
+          nextButton:'.swiper-button-next',//下一张
+          preventClicks : false,//默认true
           onTransitionStart(swiper){
             console.log(swiper)
           },
@@ -71,7 +82,13 @@
         discountItems: [
           {"src":'/static/c1.jpg'},
           {"src":'/static/c2.jpg'},
-          {"src":'/static/c3.jpg'}
+          {"src":'/static/c3.jpg'},
+          {"src":'/static/c4.jpg'},
+          {"src":'/static/c5.jpg'},
+          {"src":'/static/c6.jpg'},
+          {"src":'/static/c7.jpg'},
+          {"src":'/static/c8.jpg'},
+          {"src":'/static/c9.jpg'}
         ],
         newItems: [
           {"src":'/static/c4.jpg'},
@@ -109,8 +126,13 @@
 <style>
   .card-header-tabs {
     margin: 0;
+    padding: 5px;
   }
   .swiper-container{
     height: 400px;
+  }
+  img.swiper-image {
+    width: 100%;
+    height: 75%;
   }
 </style>
