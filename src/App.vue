@@ -8,6 +8,7 @@
       <carousel></carousel>
       <tabs></tabs>
       <cards></cards>
+      <news></news>
     </div>
   </div>
 </template>
@@ -17,11 +18,12 @@ import navbar from "./components/index/navbar";
 import carousel from "./components/index/carousel";
 import tabs from "./components/index/tabs";
 import cards from "./components/index/cards";
+import news from "./components/index/news";
 
 
 export default {
   name: 'app',
-  components:{navbar,carousel,tabs,cards}
+  components:{navbar,carousel,tabs,cards,news}
 }
 </script>
 

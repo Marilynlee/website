@@ -123,7 +123,7 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
   .card-header-tabs {
     margin: 0;
     padding: 5px;
@@ -131,7 +131,7 @@
   .swiper-container{
     height: 400px;
   }
-  img.swiper-image {
+  .swiper-image {
     width: 100%;
     height: 75%;
   }
